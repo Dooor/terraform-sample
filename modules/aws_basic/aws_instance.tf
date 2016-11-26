@@ -14,6 +14,6 @@ resource "aws_instance" "web" {
   associate_public_ip_address = "true"
 
   tags {
-    Name = "web"
+    Name = "${var.service}-instance"
   }
 }

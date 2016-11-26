@@ -11,6 +11,6 @@ resource "aws_route_table" "route_table" {
   }
 
   tags {
-    Name = "route_table"
+    Name = "${var.service}-route-table"
   }
 }

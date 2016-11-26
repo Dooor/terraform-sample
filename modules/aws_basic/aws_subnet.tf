@@ -8,7 +8,7 @@ resource "aws_subnet" "subnet_1" {
   availability_zone = "ap-northeast-1a"
 
   tags {
-    Name = "subnet_1"
+    Name = "${var.service}-subnet-1"
   }
 }
 
@@ -18,6 +18,6 @@ resource "aws_subnet" "subnet_2" {
   availability_zone = "ap-northeast-1c"
 
   tags {
-    Name = "subnet_2"
+    Name = "${var.service}-subnet-2"
   }
 }

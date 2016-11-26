@@ -1,3 +1,5 @@
+variable "service" {}
+
 # Map for regions
 variable "images" {
     default = {
